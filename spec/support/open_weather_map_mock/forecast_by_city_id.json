@@ -1,0 +1,125 @@
+{
+  "cod": "200",
+  "message": 0,
+  "cnt": 3,
+  "list": [
+    {
+      "dt": 1599760800,
+      "main": {
+        "temp": 66.09,
+        "feels_like": 61.48,
+        "temp_min": 64.67,
+        "temp_max": 66.09,
+        "pressure": 1021,
+        "sea_level": 1020,
+        "grnd_level": 1017,
+        "humidity": 44,
+        "temp_kf": 0.79
+      },
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "多云",
+          "icon": "03d"
+        }
+      ],
+      "clouds": {
+        "all": 37
+      },
+      "wind": {
+        "speed": 5.53,
+        "deg": 314
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2020-09-10 18:00:00"
+    },
+    {
+      "dt": 1599771600,
+      "main": {
+        "temp": 61.43,
+        "feels_like": 57.49,
+        "temp_min": 59.77,
+        "temp_max": 61.43,
+        "pressure": 1021,
+        "sea_level": 1021,
+        "grnd_level": 1018,
+        "humidity": 54,
+        "temp_kf": 0.92
+      },
+      "weather": [
+        {
+          "id": 801,
+          "main": "Clouds",
+          "description": "晴，少云",
+          "icon": "02n"
+        }
+      ],
+      "clouds": {
+        "all": 22
+      },
+      "wind": {
+        "speed": 4.76,
+        "deg": 15
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2020-09-10 21:00:00"
+    },
+    {
+      "dt": 1599782400,
+      "main": {
+        "temp": 59.18,
+        "feels_like": 56.8,
+        "temp_min": 58.62,
+        "temp_max": 59.18,
+        "pressure": 1019,
+        "sea_level": 1019,
+        "grnd_level": 1016,
+        "humidity": 57,
+        "temp_kf": 0.31
+      },
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "多云",
+          "icon": "03n"
+        }
+      ],
+      "clouds": {
+        "all": 46
+      },
+      "wind": {
+        "speed": 1.74,
+        "deg": 106
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2020-09-11 00:00:00"
+    }
+  ],
+  "city": {
+    "id": 2643743,
+    "name": "London",
+    "coord": {
+      "lat": 51.5085,
+      "lon": -0.1257
+    },
+    "country": "GB",
+    "population": 1000000,
+    "timezone": 3600,
+    "sunrise": 1599715685,
+    "sunset": 1599762420
+  }
+}

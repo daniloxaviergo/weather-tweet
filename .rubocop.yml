@@ -6,6 +6,7 @@ AllCops:
     - 'bin/*'
     - 'vendor/**/*'
     - 'tmp/**/*'
+    - 'config/puma.rb'
   TargetRubyVersion: 2.5
 
 Layout/LineLength:
@@ -33,7 +34,7 @@ Metrics/MethodLength:
   Max: 15
 
 Metrics/AbcSize:
-  Max: 15
+  Max: 17
 
 Gemspec/DateAssignment: # (new in 1.10)
   Enabled: true
