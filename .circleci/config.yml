@@ -19,7 +19,7 @@ jobs:
       - run:
           name: Running rspecs
           command:
-              bundle exec rspec --format RspecJunitFormatter --format progress
+              bundle exec rspec --format progress
   production:
     docker:
       - image: buildpack-deps:trusty
