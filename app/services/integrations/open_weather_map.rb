@@ -34,14 +34,14 @@ module Integrations
     end
 
     def city_id_or_city_name
-      @params[:city_id] || @params[:city_name]
+      @params[:city_id]&.to_i || @params[:city_name]
     end
 
     def current_temperature
       return if @errors.present?
 
       result = @weather_api.current(city_id_or_city_name)
-      @condictions = result.weather_conditions.main
+      @condictions = result.weather_conditions.description
       @temperature = result.weather_conditions.temperature
       @city_name = result.city.name
     end

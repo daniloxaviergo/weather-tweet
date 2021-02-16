@@ -15,7 +15,7 @@ describe Integrations::OpenWeatherMap, type: :service do
         service.execute
 
         str_date = Date.today.strftime('%d/%m')
-        expect(service.tweet_text).to eq("282.55°C e Clear em Mountain View em #{str_date}. Média para os próximos dias: 63.76°C em 10/09, 59.18°C em 11/09.")
+        expect(service.tweet_text).to eq("282.55°C e clear sky em Mountain View em #{str_date}. Média para os próximos dias: 63.76°C em 10/09, 59.18°C em 11/09.")
         expect(service.errors).to be_blank
       end
     end
