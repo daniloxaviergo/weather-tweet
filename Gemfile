@@ -9,6 +9,7 @@ gem 'openweathermap', '~> 0.2.3'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.5'
 gem 'twitter'
+gem 'apipie-rails', '~> 0.5.18'
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
@@ -17,7 +18,6 @@ end
 group :development, :test do
   gem 'dotenv-rails'
   gem 'pry-rails'
-  gem 'apipie-rails', '~> 0.5.18'
   gem 'rspec-rails'
   gem 'rubocop', require: false
   gem 'rubocop-rails'
