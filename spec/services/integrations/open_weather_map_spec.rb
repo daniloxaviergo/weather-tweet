@@ -14,7 +14,8 @@ describe Integrations::OpenWeatherMap, type: :service do
         service = described_class.new(params)
         service.execute
 
-        expect(service.tweet_text).to eq('282.55 e Clear em Mountain View em 15/02. Média para os próximos dias: 63.76°C em 10/09, 59.18°C em 11/09.')
+        str_date = Date.today.strftime('%d/%m')
+        expect(service.tweet_text).to eq("282.55°C e Clear em Mountain View em #{str_date}. Média para os próximos dias: 63.76°C em 10/09, 59.18°C em 11/09.")
         expect(service.errors).to be_blank
       end
     end
@@ -24,7 +25,7 @@ describe Integrations::OpenWeatherMap, type: :service do
         OpenWeatherMapMock::Endpoints.current_by_city_id_error(params[:city_id])
       end
 
-      it 'empty forecasts and raise error' do
+      it 'empty text weather' do
         service = described_class.new(params)
         service.execute
 

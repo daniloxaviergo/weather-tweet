@@ -8,6 +8,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'openweathermap', '~> 0.2.3'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.5'
+gem 'twitter'
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'

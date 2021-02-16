@@ -71,16 +71,21 @@ module Integrations
     def mount_text
       return if @errors.present?
 
-      @tweet_text = "#{@temperature} e #{@condictions} em #{@city_name} em #{Date.today.strftime('%d/%m')}. "
+      @tweet_text = "#{@temperature}#{human_unit} e #{@condictions} "
+      @tweet_text += "em #{@city_name} em #{Date.today.strftime('%d/%m')}. "
       @tweet_text += 'Média para os próximos dias: '
 
       average_text = []
       @average_temperature.each_key do |str_date|
-        average_text.push("#{@average_temperature[str_date]}°C em #{str_date}")
+        average_text.push("#{@average_temperature[str_date]}#{human_unit} em #{str_date}")
       end
 
       @tweet_text += "#{average_text.join(', ')}."
       @tweet_text
+    end
+
+    def human_unit
+      @unit == 'metric' ? '°C' : '°F'
     end
   end
 end
