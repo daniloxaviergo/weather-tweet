@@ -17,7 +17,7 @@ end
 group :development, :test do
   gem 'dotenv-rails'
   gem 'pry-rails'
-  gem 'rspec_api_documentation'
+  gem 'apipie-rails', '~> 0.5.18'
   gem 'rspec-rails'
   gem 'rubocop', require: false
   gem 'rubocop-rails'
