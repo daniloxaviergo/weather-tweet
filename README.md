@@ -32,7 +32,7 @@ Exemplo de requisição:
 ```
 curl -d '{"city_id":"3398904", "lang":"ja", "unit":"imperial"}' \
   -H "Content-Type: application/json" \
-  -X POST http://localhost:3000/v1/tweets
+  -X POST https://dxs-weather-tweet.herokuapp.com/v1/tweets
 
 curl -d '{"city_id":"3398904", "lang":"pt"}' \
   -H "Content-Type: application/json" \
