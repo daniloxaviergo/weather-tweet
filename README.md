@@ -1,5 +1,7 @@
 # weather-tweet
 
+Documentação da api: http://dxs-weather-tweet.herokuapp.com/docs
+
 Comandos para montar o ambiente
 
 ```
